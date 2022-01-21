@@ -47,6 +47,8 @@ document.querySelector('.nav__links').addEventListener('click',function (e) {
         document.querySelector(id).scrollIntoView({behavior: 'smooth'})
     }
 })
+
+//TABBED COMPONENT
 tabsContainer.addEventListener('click',function (e) {
     const clicked = e.target.closest('.operations__tab')
     if (!clicked) return
@@ -55,3 +57,4 @@ tabsContainer.addEventListener('click',function (e) {
     clicked.classList.add('operations__tab--active')
     document.querySelector(`.operations__content--${clicked.dataset.tab}`).classList.add('operations__content--active')
 })
+// MENU FADE ANIMATION WITH JS
