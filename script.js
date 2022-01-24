@@ -129,7 +129,4 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach(img => imgObserver.observe(img));
-
-const imgObserver = new IntersectionObserver(loadImg,{root: null,threshold: 0})
-
-imgTargets.forEach(img => imgObserver.observe(img))
+//Sider
